@@ -1,0 +1,100 @@
+header {
+  background-color: $white-color;
+  color: $black-color;
+  position: sticky;
+  position: -webkit-sticky;
+  font-family: $poppins-font;
+  top: 0;
+  width: auto;
+  z-index: 1000;
+  box-shadow: 0px 0px 9.999px 0px rgba(0, 0, 0, 0.07);
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .logo_container {
+    width: 15%;
+    height: 20%;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    min-width: min-content;
+    // justify-content: right;
+  }
+
+  .image {
+    width: 70px;
+
+    @media screen and (max-width: 768px) {
+      width: 50px;
+    }
+
+    @media screen and (max-width: 425px) {
+      width: 40px;
+    }
+  }
+
+  .header_title {
+    font-size: $font-size-h4-mobile;
+    font-weight: $font-weight-h2-mobile;
+    line-height: $line-height-h3-mobile;
+    margin-top: 0px;
+    text-wrap: nowrap;
+    margin-bottom: 0px;
+
+    @media screen and (max-width: 768px) {
+      font-size: $font-size-h5-desktop;
+      font-weight: $font-weight-h4-desktop;
+      line-height: $line-height-h4-desktop;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: $font-size-h7-desktop;
+      font-weight: $font-weight-h5-desktop;
+      line-height: $line-height-h4-desktop;
+    }
+  }
+
+  .nav {
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: auto;
+  }
+
+  .nav_list {
+    list-style-type: none; /* Removes bullets */
+    margin: 0; /* Optional: Resets default margin */
+    padding: 0; /* Optional: Resets default padding */
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      gap: 2rem;
+    }
+  }
+
+  .nav_item {
+    display: inline-block; /* Optional: To align items horizontally */
+    text-decoration: none;
+    text-wrap: nowrap;
+  }
+
+  .nav_link {
+    text-decoration: none;
+    color: $black-color;
+    font-weight: 450;
+  }
+}
